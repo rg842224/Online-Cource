@@ -1,0 +1,205 @@
+<html>
+<head>
+<style>
+.black{text-align:center}
+.center{color:red;text-align:left}
+</style>
+</head>
+<body>
+<h1 class="black">PHP</h1>
+<p class="center">What is PHP</p>
+<p>PHP is a server side scripting language.
+PHP is an interpreted language, i.e. there is no need for compilation.
+PHP is an object-oriented language.
+PHP is an open-source scripting language.
+PHP is simple and easy to learn language.</p>
+<p class="center">PHP Features</p>
+<p>There are given many features of PHP.
+Performance: Script written in PHP executes much faster then those scripts written in other languages such as JSP & ASP.
+Open Source Software: PHP source code is free available on the web, you can developed all the version of PHP according to your requirement without paying any cost.
+Platform Independent: PHP are available for WINDOWS, MAC, LINUX & UNIX operating system. A PHP application developed in one OS can be easily executed in other OS also.
+Compatibility: PHP is compatible with almost all local servers used today like Apache, IIS etc.
+Embedded: PHP code can be easily embedded within HTML tags and script.
+</p>
+<p class="center">PHP Example</p>
+It is very easy to create a simple PHP example. To do so, create a file and write HTML tags + PHP code and save this file with .php extension.
+All PHP code goes between php tag. A syntax of PHP tag is given below:
+<?php   
+//your code here  
+?>  
+Let's see a simple PHP example where we are writing some text using PHP echo command.
+File: first.php
+<html>  
+<body>
+<?php  
+echo "<h2>Hello First PHP</h2>";  
+?>  
+</body>  
+</html>  
+Output:
+Hello First PHP</p>
+
+
+<p class="center">PHP Data Types</p>
+<p>PHP data types are used to hold different types of data or values. PHP supports 8 primitive data types that can be categorized further in 3 types:
+Scalar Types
+Compound Types
+Special Types
+PHP Data Types: Scalar Types
+There are 4 scalar data types in PHP.
+boolean
+integer
+float
+string
+</p>
+<p class="center">PHP Data Types: Compound Types</p>
+There are 2 compound data types in PHP.
+array
+object</p>
+<p class="center">PHP Data Types: Special Types</p>
+There are 2 special data types in PHP.
+resource
+NULL
+</p>
+<p class="center">PHP Echo</p>
+<p>PHP echo is a language construct not a function, so you don't need to use parenthesis with it. But if you want to use more than one parameters, it is required to use parenthesis.
+The syntax of PHP echo is given below:
+void echo ( string $arg1 [, string $... ] )  
+PHP echo statement can be used to print string, multi line strings, escaping characters, variable, array etc.</p>
+<p class="center">PHP echo: printing string</p>
+<p>File: echo1.php
+<?php  
+echo "Hello by PHP echo";  
+?>  
+Output:
+Hello by PHP echo
+</p>
+<p>PHP echo: printing multi line string
+File: echo2.php
+<?php  
+echo "Hello by PHP echo  
+this is multi line  
+text printed by   
+PHP echo statement  
+";  
+?>  
+Output:
+Hello by PHP echo this is multi line text printed by PHP echo statement</p>
+<p class="center">PHP echo: printing escaping characters</p>
+<p>File: echo3.php
+<?php  
+echo "Hello escape \"sequence\" characters";  
+?>  
+Output:
+Hello escape "sequence" characters</p>
+<p class="center">PHP echo: printing variable value</p>
+<p>File: echo4.php
+<?php  
+$msg="Hello JavaTpoint PHP";  
+echo "Message is: $msg";    
+?>  
+Output:
+Message is: Hello JavaTpoint PHP</p>
+
+<p class="center">
+PHP Functions</p>
+<p>PHP function is a piece of code that can be reused many times. It can take input as argument list and return value. There are thousands of built-in functions in PHP.
+In PHP, we can define Conditional function, Function within Function and Recursive function also.
+</p>
+<p class="center">Advantage of PHP Functions</p>
+<p>Code Reusability: PHP functions are defined only once and can be invoked many times, like in other programming languages.
+Less Code: It saves a lot of code because you don't need to write the logic many times. By the use of function, you can write the logic only once and reuse it.
+Easy to understand: PHP functions separate the programming logic. So it is easier to understand the flow of the application because every logic is divided in the form of functions.
+</p>
+<p class="center">PHP User-defined Functions</p>
+<p>We can declare and call user-defined functions easily. Let's see the syntax to declare user-defined functions.</p>
+<p class="center">Syntax</p>
+<p>function functionname(){  
+//code to be executed  
+}  
+Note: Function name must be start with letter and underscore only like other labels in PHP. It can't be start with numbers or special symbols.
+PHP Functions Example
+File: function1.php
+<?php  
+function sayHello(){  
+echo "Hello PHP Function";  
+}  
+sayHello();//calling function  
+?>  
+Output:
+Hello PHP Function</p>
+<p class="center">PHP Function Arguments</p>
+<p>We can pass the information in PHP function through arguments which is separated by comma.
+PHP supports Call by Value (default), Call by Reference, Default argument values and Variable-length argument list.
+Let's see the example to pass single argument in PHP function.
+File: functionarg.php
+<?php  
+function sayHello($name){  
+echo "Hello $name<br/>";  
+}  
+sayHello("Sonoo");  
+sayHello("Vimal");  
+sayHello("John");  
+?>  
+Output:
+Hello Sonoo
+Hello Vimal
+Hello John
+Let's see the example to pass two argument in PHP function.
+File: functionarg2.php
+<?php  
+function sayHello($name,$age){  
+echo "Hello $name, you are $age years old<br/>";  
+}  
+sayHello("Sonoo",27);  
+sayHello("Vimal",29);  
+sayHello("John",23);  
+?>  
+Output:
+Hello Sonoo, you are 27 years old
+Hello Vimal, you are 29 years old
+Hello John, you are 23 years old</p>
+<p class="center">PHP Call By Reference</p>
+<p>Value passed to the function doesn't modify the actual value by default (call by value). But we can do so by passing value as a reference.
+By default, value passed to the function is call by value. To pass value as a reference, you need to use ampersand (&) symbol before the argument name.
+Let's see a simple example of call by reference in PHP.
+File: functionref.php
+<?php  
+function adder(&$str2)  
+{  
+    $str2 .= 'Call By Reference';  
+}  
+$str = 'Hello ';  
+adder($str);  
+echo $str;  
+?>  
+Output:
+Hello Call By Reference</p>
+<p class="center">PHP Function: Default Argument Value</p>
+<p>We can specify a default argument value in function. While calling PHP function if you don't specify any argument, it will take the default argument. Let's see a simple example of using default argument value in PHP function.
+File: functiondefaultarg.php
+<?php  
+function sayHello($name="Sonoo"){  
+echo "Hello $name<br/>";  
+}  
+sayHello("Rajesh");  
+sayHello();//passing no value  
+sayHello("John");  
+?>  
+Output:
+Hello Rajesh
+Hello Sonoo
+Hello John</p>
+<p class="center">PHP Function: Returning Value</p>
+<p>Let's see an example of PHP function that returns value.
+File: functiondefaultarg.php
+<?php  
+function cube($n){  
+return $n*$n*$n;  
+}  
+echo "Cube of 3 is: ".cube(3);  
+?>  
+Output:
+Cube of 3 is: 27
+</p>
+</html>

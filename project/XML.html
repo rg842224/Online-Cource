@@ -1,0 +1,69 @@
+<html>
+<head><style type="text/css">
+h1{color:GREEN}
+h3{color:BLUE}
+</style>
+</head>
+<h1><center><u>XML</u></center></h1>
+
+<body>
+<h3><b>What is XML</b></h3>
+<br>o	Xml (extensible Markup Language) is a mark up language.
+<br>o	XML is designed to store and transport data.
+<br>o	Xml was released in late 90’s. it was created to provide an easy to use and store self describing data.
+<br>o	XML became a W3C Recommendation on February 10, 1998.
+<br>o	XML is not a replacement for HTML.
+<br>o	XML is designed to be self-descriptive.
+<br>o	XML is designed to carry data, not to display data.
+<br>o	XML tags are not predefined. You must define your own tags.
+<br>o	XML is platform independent and language independent.
+<h3><b>What is mark-up language</b></h3>
+<p>A mark up language is a modern system for highlight or underline a document.
+Students often underline or highlight a passage to revise easily, same in the sense of modern mark up language highlighting or underlining is replaced by tags.</p>
+<h3><b>Why XML</b></h3>
+<p>Platform Independent and Language Independent: The main benefit of xml is that you can use it to take data from a program like Microsoft SQL, convert it into XML then share that XML with other programs and platforms. You can communicate between two platforms which are generally very difficult.
+The main thing which makes XML truly powerful is its international acceptance. Many corporation use XML interfaces for databases, programming, office application mobile phones and more. It is due to its platform independent feature.</p>
+<h3><b>XML Validation</b></h3>
+<br>XML file can be validated by 2 ways:
+<br>1.	against DTD
+<br>2.	against XSD
+<br>DTD (Document Type Definition) and XSD (XML Schema Definition) are used to define XML structure.<p>
+<h3><b>XML DTD</b></h3>
+<br>Let's see an example of XML using DTD file.
+<br>employee.xml
+<br>1.	<?xml version="1.0"?>  
+<br>2.	<!DOCTYPE employee SYSTEM "employee.dtd">  
+<br>3.	<employee>  
+<br>4.	  <firstname>vimal</firstname>  
+<br>5.	  <lastname>jaiswal</lastname>  
+<br>6.	  <email>vimal@javatpoint.com</email>  
+<br>7.	</employee><p>
+<h3><b>XML Schema</b></h3>
+<<br>Let's see an example of XML using XSD file.
+<br>1.	<?xml version="1.0"?>  
+<br>2.	<employee  
+<br>3.	xmlns="http://www.javatpoint.com"  
+<br>4.	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+<br>5.	xsi:schemaLocation="http://www.javatpoint.com employee.xsd">  
+<br>6.	  <firstname>vimal</firstname>  
+<br>7.	  <lastname>jaiswal</lastname>  
+<br>8.	  <email>vimal@javatpoint.com</email> 
+<br>9.	</employee>  
+<h3><b>Valid XML document</b></h3>
+<p>It must be well formed (satisfy all the basic syntax condition)
+It should be behave according to predefined DTD or XML schema</p>
+<h3><b>Rules for well formed XML</b></h3>
+<br>o	It must begin with the XML declaration.
+<br>o	It must have one unique root element.
+<br>o	All start tags of XML documents must match end tags.
+<br>o	XML tags are case sensitive.
+<br>o	All elements must be closed.
+<br>o	All elements must be properly nested.
+<br>o	All attributes values must be quoted.
+<br>o	XML entities must be used for special characters.
+<h3><b>XML DTD</b></h3>
+<p>A DTD defines the legal elements of an XML document
+In simple words we can say that a DTD defines the document structure with a list of legal elements and attributes.
+XML schema is a XML based alternative to DTD.
+Actually DTD and XML schema both are used to form a well formed XML document.
+We should avoid errors in XML documents because they will stop the XML programs.</p>
