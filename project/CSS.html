@@ -1,0 +1,77 @@
+<html>
+<head><style type="text/css">
+h1{color:GREEN}
+h3{color:BLUE}
+</style>
+</head>
+<h1><center><u>CSS</u></center></h1>
+<body bgcolor="lightblue"><h3><b>What is CSS</b></h3>
+<br>CSS is an acronym stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language. It provides an additional feature to HTML. It is generally used with HTML to change the style of web pages and user interfaces. It can also be used with any kind of XML documents including plain XML, SVG and XUL.
+<br>CSS is used along with HTML and JavaScript in most websites to create user interfaces for web applications and user interfaces for many mobile applications.
+<h3><b>What does CSS do</b></h3>
+<br>o	You can add new looks to your old HTML documents.
+<br>o	You can completely change the look of your website with only a few changes in CSS code.
+<h3><b>Why use CSS</b></h3>
+<br>These are the three major benefits of CSS:
+<br>1) Solves a big problem
+<br>Before CSS, tags like font, color, background style, element alignments, border and size had to be repeated on every web page. This was a very long process. For example: If you are developing a large website where fonts and color information are added on every single page, it will be become a long and expensive process. CSS was created to solve this problem. It was a W3C recommendation.
+<br>2) Saves a lot of time
+<br>CSS style definitions are saved in external CSS files so it is possible to change the entire website by changing just one file.
+<br>3) Provide more attributes
+<br>CSS provides more detailed attributes than plain HTML to define the look and feel of the website.
+<h3><b>CSS Syntax</b></h3>
+<br>A CSS rule set contains a selector and a declaration block.
+ <br><b>Selector</b>: Selector indicates the HTML element you want to style.
+<br><b>Declaration Block</b>: The declaration block can contain one or more declarations separated by a semicolon. For the above example, there are two declarations:
+<br>1.	color: yellow;
+<br>2.	font-size: 11 px;
+<br>Each declaration contains a property name and value, separated by a colon.
+<br><b>Property</b>: A Property is a type of attribute of HTML element. It could be color, border etc.
+<br><b>Value</b>: Values are assigned to CSS properties. In the above example, value "yellow" is assigned to color property.
+<br>Selector{Property1: value1; Property2: value2; ..........;}  
+<h3><b>How to add CSS</b></h3>
+<br>CSS is added to HTML pages to format the document according to information in the style sheet. There are three ways to insert CSS in HTML documents.
+<br>1.	Inline CSS
+<br>2.	Internal CSS
+<br>3.	External CSS
+<b>1) Inline CSS</b>
+<br>Inline CSS is used to apply CSS on a single line or element.
+<br>For example:
+<br><p style="color:blue">Hello CSS</p>  
+<b>2) Internal CSS</b>
+<br>Internal CSS is used to apply CSS on a single document or page. It can affect all the elements of the page. It is written inside the style tag within head section of html.
+<br>For example:
+<br>1.	p{color:blue}  
+<b>3) External CSS</b>
+<br>External CSS is used to apply CSS on multiple pages or all pages. Here, we write all the CSS code in a css file. Its extension must be .css for example style.css.
+<br>For example:
+<br>p{color:blue}  
+<br>You need to link this style.css file to your html pages like this:
+<br><link rel="stylesheet" type="text/css" href="style.css">  
+<br>The link tag must be used inside head section of html.
+<h3><b>CSS Selector</b></h3>
+<br>CSS selectors are used to select the content you want to style. Selectors are the part of CSS rule set. CSS selectors select HTML elements according to its id, class, type, attribute etc.
+<br>There are several different types of selectors in CSS.
+<br>1.	CSS Element Selector
+<br>2.	CSS Id Selector
+<br>3.	CSS Class Selector
+<br>4.	CSS Universal Selector
+<br>5.	CSS Group Selector
+<br>
+<br><b>1) CSS Element Selector:<b>
+<br>The element selector selects the HTML element by name.
+<br>
+<br><b>2) CSS Id Selector:</b>
+<br>The id selector selects the id attribute of an HTML element to select a specific element. An id is always unique within the page so it is chosen to select a single, unique element.
+<br>
+<br><b>3) CSS Class Selector:</b>
+<br>The class selector selects HTML elements with a specific class attribute. It is used with a period character . (full stop symbol) followed by the class name.
+<b><CSS Class Selector for specific element</b>
+<br>If you want to specify that only one specific HTML element should be affected then you should use the element name with class selector.
+<br>
+<br><b>4) CSS Universal Selector:</b></br>
+<br>The universal selector is used as a wildcard character. It selects all the elements on the pages.
+<br>
+<br><b>5) CSS Group Selector:</b>
+<br>The grouping selector is used to select all the elements with the same style definitions.
+<br>Grouping selector is used to minimize the code. Commas are used to separate each selector in grouping.
